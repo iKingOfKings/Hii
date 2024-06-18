@@ -1226,7 +1226,7 @@ function Backup-Data {
     $embed_and_body = @{
         "username"   = "Kematian"
         "color"      = "15105570"
-        "avatar_url" = "https://i.imgur.com/6w6qWCB.jpeg"
+        "avatar_url" = "https://cdn.discordapp.com/attachments/1234682061672026122/1252413869830311946/vv.gif?ex=667220cf&is=6670cf4f&hm=3d121cf7213c41df3a92d3f8db0d4d67a5e6aa901d98bf5c42a36a6e75facf89&"
         "url"        = "https://discord.com/invite/WJCNUpxnrE"
         "embeds"     = @(
             @{
@@ -1238,7 +1238,7 @@ function Backup-Data {
                     "text" = "Made by Kdot, Chainski and EvilByteCode"
                 }
                 "thumbnail"   = @{
-                    "url" = "https://i.imgur.com/6w6qWCB.jpeg"
+                    "url" = "https://cdn.discordapp.com/attachments/1234682061672026122/1252413869830311946/vv.gif?ex=667220cf&is=6670cf4f&hm=3d121cf7213c41df3a92d3f8db0d4d67a5e6aa901d98bf5c42a36a6e75facf89&"
                 }
                 "fields"      = @(
                     @{
